@@ -38,7 +38,7 @@ d3.select("html").style("font-size", newFontSize + "%");
 
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#074050","#4c9b82","#d3f2a3"])
+	.range(["#d3f2a3","#4c9b82","#074050"])
 	//.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
@@ -372,11 +372,11 @@ d3.select("html").style("font-size", newFontSize + "%");
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////// Draw Heatmap /////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-	
+
 //Based on the heatmap example of: http://blockbuilder.org/milroc/7014412
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#e15383","#ffa679","#fef6b5"])
+	.range(["#fef6b5","#ffa679","#e15383"])
 	.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
@@ -539,7 +539,7 @@ d3.select("html").style("font-size", newFontSize + "%");
 
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#573b88","#ce78b3","#f9ddda"])
+	.range(["#f9ddda","#ce78b3","#573b88",])
 	.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
@@ -863,7 +863,7 @@ d3.select("html").style("font-size", newFontSize + "%");
 
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#7c1d6f","#e34f6f","#fcde9c"])
+	.range(["#fcde9c","#e34f6f","#7c1d6f"])
 	.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
@@ -1186,7 +1186,7 @@ d3.select("html").style("font-size", newFontSize + "%");
 
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#009392","#f1eac8","#d0587e"])
+	.range(["#d0587e","#f1eac8","#009392"])
 	.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
@@ -1347,7 +1347,7 @@ d3.select("html").style("font-size", newFontSize + "%");
 
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#4b2991","#ea4f88","#edd9a3"])
+	.range(["#edd9a3","#ea4f88","#4b2991"])
 	.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
