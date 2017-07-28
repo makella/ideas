@@ -1186,7 +1186,7 @@ d3.select("html").style("font-size", newFontSize + "%");
 
 var colorScale = d3.scale.linear()
 	.domain([0, d3.max(accidents, function(d) {return d.count; })/2, d3.max(accidents, function(d) {return d.count; })])
-	.range(["#d0587e","#f1eac8","#009392"])
+	.range(["#009392","#f1eac8","#d0587e"])
 	.interpolate(d3.interpolateHcl);
 
 var dayLabels = svg.selectAll(".dayLabel")
